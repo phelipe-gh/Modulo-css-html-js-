@@ -5,16 +5,36 @@
 
         <style>
 
-        
+            .estiloButton {
+
+                color: rgb(255, 255, 255);
+                width: 100px;
+                height: 50px;
+                cursor: pointer;
+                background: linear-gradient(to right, #000000, #dd6408);
+
+            }
+
         </style>
 
     </head>
 
     <body>
 
+        <h1>
+            Modulo 1 - HTML, CSS & JAVASCTIPT
+        </h1>
+
+        <button onclick="mostrarModal()" class="estiloButton">
+            Start
+        </button>
+
         <script>
 
-            
+            function mostrarModal() {
+                alert("Hello World!")
+            }
+
         </script>
 
     </body>
