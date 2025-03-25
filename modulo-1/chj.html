@@ -29,10 +29,26 @@
             Start
         </button>
 
+        <input type="number" id="valor1">
+        <input type="number" id="valor2">
+
+        <input disabled for="resultado" id="resultado"></input>
+
+        <button onclick="somar()">Calcular</button>
+
         <script>
 
             function mostrarModal() {
                 alert("Hello World!")
+            }
+
+            function somar() {
+                
+                var valor1 = document.getElementById("valor1").value;
+                var valor2 = document.getElementById("valor2").value;
+
+                document.getElementById("resultado").value = Number(valor1)+Number(valor2)
+
             }
 
         </script>
